@@ -25,6 +25,6 @@ func TestHelloWorld(t *testing.T) {
     out := captureOutput(func() { main() })
     expected := "Hello, World!\n"
     if out != expected {
-        t.Fatalf("esperado %q, obtido %q", expected, out)
+        t.Fatalf("expected %q, got %q", expected, out)
     }
 }

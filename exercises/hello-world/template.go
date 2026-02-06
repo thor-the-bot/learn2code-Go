@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-    // TODO: substituir pela tua implementação
+    // TODO: replace with your implementation
     fmt.Println("Hello, World!")
 }
