@@ -1,34 +1,23 @@
 package main
 
 import (
-    "flag"
-    "fmt"
-    "os"
-    "os/exec"
+	"flag"
+	"fmt"
 )
 
 func main() {
-    if len(os.Args) < 2 {
-        fmt.Println("usage: learn2code <command>")
-        fmt.Println("commands: run test")
-        os.Exit(1)
-    }
+	list := flag.Bool("list", false, "List available exercises")
+	run := flag.String("run", "", "Run an exercise by name")
+	flag.Parse()
 
-    cmd := os.Args[1]
-    switch cmd {
-    case "run":
-        // run the exercise's main.go (default hello-world)
-        execCmd := exec.Command("go", "run", "./exercises/hello-world/template.go")
-        execCmd.Stdout = os.Stdout
-        execCmd.Stderr = os.Stderr
-        execCmd.Run()
-    case "test":
-        testCmd := exec.Command("go", "test", "./...", "-v")
-        testCmd.Stdout = os.Stdout
-        testCmd.Stderr = os.Stderr
-        testCmd.Run()
-    default:
-        fmt.Println("unknown command")
-        os.Exit(2)
-    }
+	if *list {
+		fmt.Println("Available exercises:\n- hello-world")
+		return
+	}
+	if *run != "" {
+		fmt.Printf("Running exercise: %s\n", *run)
+		// TODO: implement exercise runner
+		return
+	}
+	fmt.Println("learn2code CLI — use -list or -run <exercise>")
 }

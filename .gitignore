@@ -1,15 +1,10 @@
-# Ignore user solutions
-**/solutions/
-**/*.solution.go
-
-# Go build
-bin/
+# Ignore solutions and editor files
+solutions/
 *.exe
-*.dll
-*.so
-*.dylib
-
-# Editor
+*.out
+*.test
+*.log
+# IDE
 .vscode/
-.idea/
 *.swp
+.DS_Store

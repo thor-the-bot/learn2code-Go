@@ -1,8 +1,7 @@
-package main
+package helloworld
 
-import "fmt"
-
-func main() {
-    // TODO: replace with your implementation
-    fmt.Println("Hello, World!")
+// HelloWorld returns the classic greeting.
+func HelloWorld() string {
+	// TODO: implement
+	return ""
 }

@@ -1,9 +1,10 @@
-Hello World
+# Hello World
 
-Goal: Introduce basic Go syntax.
+Objective: implement a function that returns the string "Hello, world!".
 
-Instructions:
-- Write a program that prints exactly: Hello, World!
-- Save your solution in exercises/hello-world/solutions/<yourname>/main.go (solutions are ignored by default).
+Files:
+- template.go — starter code
+- solution_test.go — tests that validate the behaviour
 
-Tests: run `go test ./...` in the repository.
+Run tests:
+  go test ./... -run HelloWorld

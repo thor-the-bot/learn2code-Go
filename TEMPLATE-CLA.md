@@ -1,6 +1,11 @@
-Contributor License Agreement (CLA) Template
+Contributor License Agreement (CLA) — TEMPLATE
 
-I, <Full Name>, email <email@example.com>, hereby grant to the maintainer(s) of the learn2code-Go project a perpetual, worldwide, non-exclusive, royalty-free, transferable, sublicensable license to copy, modify, distribute, and otherwise use my contributions, and to relicense them under different terms (including proprietary).
+By signing this document, I grant the learn2code project the necessary rights to use, modify, and distribute my contributions under the project's license (Apache-2.0).
 
-Signature: ____________________
-Date: ________________________
+Name: ______________________
+Email: ______________________
+Date: ______________________
+Signature (typed is fine): ______________________
+
+Notes:
+- This is a template. For legal certainty, consult counsel or use a standard CLA service (e.g., CLA assistant, DCO, or similar).
